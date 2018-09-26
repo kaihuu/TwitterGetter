@@ -2,6 +2,7 @@ import config, MongoDBAccessor
 import json
 from requests_oauthlib import OAuth1Session, OAuth1
 import requests, sys
+from datetime import datetime
 
 ck = config.consumer_key
 cs = config.consumer_secret
@@ -47,6 +48,7 @@ while(True):
     
     except json.JSONDecodeError as e:
         print('再取得')
+        print(datetime.now())
         pass
     
     except KeyboardInterrupt:
