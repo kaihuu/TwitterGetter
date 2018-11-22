@@ -21,7 +21,7 @@ res = twitter.get(url, params = params)
 
 results = json.loads(res.text)
 
-nRstTm = 15 # Rate Limited待機時間
+nRstTm = 15 * 3600 # Rate Limited待機時間
 
 #for result in results['statuses']:
     #print(result)
