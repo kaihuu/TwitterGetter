@@ -52,6 +52,7 @@ while(True):
         elif r.status_code == 420:
             print('Rate Limited：',nRstTm,'分待機')
             time.sleep(nRstTm)
+            print("スリープ終了")
         else:
             # とりあえず処理抜けとく
             print('req.status_code',r.status_code)
